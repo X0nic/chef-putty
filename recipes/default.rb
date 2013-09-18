@@ -1,5 +1,6 @@
 windows_package node['putty']['package_name'] do
   source node['putty']['url']
+  checksum node['putty']['checksum']
   options "/DIR=\"#{node['putty']['home']}\""
   installer_type :inno
   action :install
