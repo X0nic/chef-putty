@@ -5,7 +5,7 @@ description 'Installs/Configures Putty a free implementation of Telnet and SSH \
   for Windows and Unix platforms, along with an xterm terminal emulator.'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 name 'putty'
-version '0.0.5'
+version IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue "0.0.1"
 supports 'windows'
 
 depends 'windows', '>= 1.2.8'
